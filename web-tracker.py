@@ -24,6 +24,8 @@ def clear_page(number_of_pages):
 
 
 def full_screen():
+    webbrowser.open(r'www.google.com')
+    keyboard.press_and_release('ctrl+N')
     keyboard.press_and_release('f11')
     keyboard.press_and_release('ctrl+0')
 
@@ -42,7 +44,7 @@ time.sleep(15)
 print('Go..')
 reload_seconds = 30
 
-clear_page(1)
+# clear_page(1)
 full_screen()
 for i in range(10):
     for url in url_list:
